@@ -1,1 +1,1 @@
-# stepan-matysik-object-relational-mapping-
+# stepan-matysik-object-relational-mapping
