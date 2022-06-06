@@ -40,7 +40,7 @@ $ code .
 ```
 $ npm init -y
 $ npm i express
-$ npm npm install --save mysql2
+$ npm install --save mysql2
 $ npm i sequelize
 $ npm install dotenv
 $ touch .env
