@@ -18,3 +18,5 @@ app.use(routes);
 sequelize.sync({force: false}).then(() => {
   app.listen(PORT, () => console.log(`🌎 App listening on port http://localhost:${PORT} 🌎`));
 });
+
+// https://mysterious-harbor-32872.herokuapp.com/
