@@ -10,6 +10,7 @@ Tag.init(
     // define columns
     id:{
       type: DataTypes.INTEGER,
+      // allow null is not needed here because primarykey has it feature in it and unique feature.
       allowNull: false,
       primaryKey: true,
       autoIncrement: true

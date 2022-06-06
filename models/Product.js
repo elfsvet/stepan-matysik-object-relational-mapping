@@ -13,6 +13,7 @@ Product.init(
     // column will go here
     id: {
       type: DataTypes.INTEGER,
+      // allow null is not needed here because primarykey has it feature in it and unique feature.
       allowNull: false,
       primaryKey: true,
       autoIncrement: true
@@ -22,8 +23,10 @@ Product.init(
       allowNull: false
     },
     price: {
+      // lets have decimal with 1000000000.99
       type: DataTypes.DECIMAL(10,2),
       allowNull: false,
+      // validate if it is a decimal
       validate: {
         isDecimal: true
       }
@@ -32,12 +35,14 @@ Product.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 10,
+      // validate if it is a number
       validate: {
         isNumeric: true
       }
     },
     category_id: {
       type: DataTypes.INTEGER,
+      // reference the category model
       references: {
         model: 'category',
         key: 'id'

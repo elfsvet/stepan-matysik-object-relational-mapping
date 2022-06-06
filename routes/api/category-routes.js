@@ -8,6 +8,7 @@ router.get('/', (req, res) => {
   // be sure to include its associated Products
   Category.findAll({
     attributes: ['id', 'category_name'],
+    // to include product model association
     include: [
       {
         model: Product,
@@ -17,6 +18,7 @@ router.get('/', (req, res) => {
   })
     // the promise that captures the response from the database call.
     .then(dbCategoryData => res.json(dbCategoryData))
+    // catch error
     .catch(err => {
       console.log(err);
       res.status(500).json(err);
@@ -67,15 +69,14 @@ router.post('/', (req, res) => {
 router.put('/:id', (req, res) => {
   // update a category by its `id` value
   Category.update(
-    // req.body,
     {
       category_name: req.body.category_name
     },
-     {
-    where: {
-      id: req.params.id
-    }
-  })
+    {
+      where: {
+        id: req.params.id
+      }
+    })
     .then(dbCategoryData => {
       if (!dbCategoryData) {
         res.status(404).json({ message: 'No category found with this id' });

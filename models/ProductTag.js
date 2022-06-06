@@ -9,10 +9,12 @@ ProductTag.init(
     // define columns
     id: {
       type: DataTypes.INTEGER,
+      // allow null is not needed here because primarykey has it feature in it and unique feature.
       allowNull: false,
       primaryKey: true,
       autoIncrement: true
     },
+    // reference for product
     product_id: {
       type: DataTypes.INTEGER,
       references: {
@@ -20,6 +22,7 @@ ProductTag.init(
         key: 'id'
       }
     },
+    // reference to tag
     tag_id: {
       type: DataTypes.INTEGER,
       references: {
