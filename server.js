@@ -18,5 +18,5 @@ app.use(routes);
 sequelize.sync({force: false}).then(() => {
   app.listen(PORT, () => console.log(`🌎 App listening on port http://localhost:${PORT} 🌎`));
 });
-
+// i also created heroku server, but you would need to seed by itself.
 // https://mysterious-harbor-32872.herokuapp.com/
