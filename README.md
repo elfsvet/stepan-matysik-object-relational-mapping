@@ -1,7 +1,7 @@
 # Stepan Matysik's Object Relational Mapping (ORM)
 
 > ORM project. A video with a object relational mapping project description.
-> Live demo [_here_](https://youtu.be/e_2TkKhup44). 
+> Live demo [_here_](https://youtu.be/jxYPww3Sres). 
 
 ## Table of contents
 * [General info](#general-info)
@@ -19,7 +19,7 @@
 
 
 ## General Info
-This project is a object relational mapping. Uses back end to create calls in ecommerce database to create/get/update/delete products/categories/tags.
+This project is a object-relational mapping. Uses back end to create calls in e-commerce database to create/get/update/delete products/categories/tags.
 ## Technologies
 Project is created with:
 - JavaScript
@@ -30,30 +30,30 @@ Project is created with:
 To open this project in vscode using git in Terminal/Git Bash:
 
 ```
-$ cd in directory there you want to store your project
-$ git clone https://github.com/elfsvet/stepan-matysik-object-relational-mapping.git
-$ code .
+cd in directory there you want to store your project
+git clone https://github.com/elfsvet/stepan-matysik-object-relational-mapping.git
+code .
 ```
 
 ## Instructions
 1. You would need to run commands in terminal at the directory of the project:
 ```
-$ npm init -y
-$ npm i express
-$ npm install --save mysql2
-$ npm i sequelize
-$ npm install dotenv
-$ touch .env
+npm init -y
+npm i express
+npm install --save mysql2
+npm i sequelize
+npm install dotenv
+touch .env
 
 ```
 
 2. To upload data bases:
 ```
-$ mysql -u root -p
-Enter your password:
+mysql -u root -p
+<!-- Enter your password: -->
 mysql> source db/schema.sql;
 mysql> quit;
-$ npm run seed
+npm run seed
 ```
 3. To run application:
 - Update the .env file in root directory, and paste your data in user and password filed.
@@ -64,7 +64,7 @@ DB_PW='password_for_mysql'
 ```
 
 ```
-$npm start
+npm start
 ```
 
 4. Go to the browser or insomnia to test the work of the app.
@@ -79,7 +79,7 @@ $npm start
 ## Screenshots
 ![Example screenshot](./assets/images/screen_insomnia.png)
 
-If you haven't checked the link to the video with the application process please [CLICK HERE ⬇️](https://youtu.be/e_2TkKhup44)
+If you haven't checked the link to the video with the application process please [CLICK HERE ⬇️](https://youtu.be/jxYPww3Sres)
 
 
 ## Usage
